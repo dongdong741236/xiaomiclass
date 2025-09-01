@@ -1,0 +1,19 @@
+{
+  "name": "xiaomi-xiaoai-tutorial",
+  "version": "1.0.0",
+  "description": "小米小爱同学课程表导入教程",
+  "scripts": {
+    "serve": "python3 -m http.server 8000 || python -m SimpleHTTPServer 8000",
+    "build": "echo 'No build required for static site'",
+    "deploy:netlify": "netlify deploy --prod",
+    "deploy:vercel": "vercel --prod",
+    "deploy:cloudflare": "wrangler pages deploy ."
+  },
+  "keywords": [
+    "xiaomi",
+    "xiaoai",
+    "tutorial"
+  ],
+  "author": "",
+  "license": "MIT"
+}
