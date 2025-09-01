@@ -24,13 +24,13 @@ tags:
 
 进入小爱同学的课程表设置页面，在最下方空白处**连续点击**，直到出现开发者选项。
 
-![开启开发者选项](/images/step1.png)
+![开启开发者选项](/images/step1.jpg)
 
 ### 2. 开启 vConsole
 
 在 Debug 页面中，找到 **vConsole** 选项并开启。
 
-![开启vConsole](/images/step2.png)
+![开启vConsole](/images/step2.jpg)
 
 ### 3. 输入命令强制跳转
 
@@ -42,7 +42,7 @@ window.location.href='https://i.xiaomixiaoai.com/h5/precache/ai-schedule/#/impor
 
 输入完成后点击 **OK** 执行命令。
 
-![输入命令](/images/step3.png)
+![输入命令](/images/step3.jpg)
 
 ### 4. 完成导入
 
@@ -55,12 +55,7 @@ window.location.href='https://i.xiaomixiaoai.com/h5/precache/ai-schedule/#/impor
 - 导入过程中请保持网络连接稳定
 - 如果出现问题，可以尝试清除应用缓存后重试
 
-## 图片说明
 
-由于原始图片链接已失效，上面使用的是占位符图片。实际操作时的界面应该是：
-- 第一张图：小爱同学课程表设置页面，需要在底部空白处连续点击
-- 第二张图：Debug 设置页面，显示 vConsole 选项
-- 第三张图：vConsole 控制台界面，显示命令输入框
 
 ---
 
