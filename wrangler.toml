@@ -1,0 +1,10 @@
+# Cloudflare Workers/Pages configuration
+name = "xiaomi-xiaoai-tutorial"
+compatibility_date = "2024-01-01"
+
+[site]
+bucket = "./"
+
+[build]
+command = ""
+watch_paths = ["index.html", "content.md"]

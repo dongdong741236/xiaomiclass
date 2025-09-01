@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="小米小爱同学课程表导入教程 - 通过开发者选项强制开启已关闭的教务导入功能">
+    <meta name="keywords" content="小米,小爱同学,课程表,教务导入,开发者选项,vConsole">
+    <title>小米小爱同学课程表导入教程</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #ff6900;
+            margin-bottom: 20px;
+            font-size: 2em;
+            text-align: center;
+        }
+        
+        h2 {
+            color: #444;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            border-bottom: 2px solid #ff6900;
+            padding-bottom: 5px;
+        }
+        
+        h3 {
+            color: #555;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            color: #666;
+        }
+        
+        .quote {
+            background-color: #f9f9f9;
+            border-left: 4px solid #ff6900;
+            padding: 10px 20px;
+            margin: 20px 0;
+            font-style: italic;
+        }
+        
+        .step {
+            background-color: #f8f8f8;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .step-number {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: #ff6900;
+            color: white;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: Consolas, Monaco, 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        
+        pre {
+            background-color: #282c34;
+            color: #abb2bf;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+        
+        pre code {
+            background-color: transparent;
+            padding: 0;
+            color: #abb2bf;
+        }
+        
+        .warning {
+            background-color: #fff3cd;
+            border: 1px solid #ffeeba;
+            color: #856404;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        
+        .image-placeholder {
+            background-color: #f0f0f0;
+            border: 2px dashed #ccc;
+            padding: 40px;
+            text-align: center;
+            color: #999;
+            margin: 15px 0;
+            border-radius: 5px;
+            min-height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            color: #999;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 1.5em;
+            }
+            
+            h2 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>小米小爱同学课程表导入教程</h1>
+        
+        <div class="quote">
+            方法来自大群内大佬分享
+        </div>
+        
+        <h2>背景</h2>
+        <p>小米官方关闭了教务导入功能，但是似乎只在前端禁止点击了，所以现在可以强行开启导入。</p>
+        
+        <h2>操作步骤</h2>
+        
+        <div class="step">
+            <h3><span class="step-number">1</span>开启开发者选项</h3>
+            <p>进入小爱同学的课程表设置页面，在最下方空白处<strong>连续点击</strong>，直到出现开发者选项。</p>
+            <div class="image-placeholder">
+                <div>
+                    <p>📱 截图位置</p>
+                    <p>小爱同学 → 课程表设置 → 底部连续点击</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="step">
+            <h3><span class="step-number">2</span>开启 vConsole</h3>
+            <p>在 Debug 页面中，找到 <strong>vConsole</strong> 选项并开启。</p>
+            <div class="image-placeholder">
+                <div>
+                    <p>🔧 截图位置</p>
+                    <p>Debug 设置页面 → vConsole 选项</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="step">
+            <h3><span class="step-number">3</span>输入命令强制跳转</h3>
+            <p>退回到主界面，点击 vConsole 按钮，在命令输入框（command）处输入以下命令：</p>
+            <pre><code>window.location.href='https://i.xiaomixiaoai.com/h5/precache/ai-schedule/#/import'</code></pre>
+            <p>输入完成后点击 <strong>OK</strong> 执行命令。</p>
+            <div class="image-placeholder">
+                <div>
+                    <p>⌨️ 截图位置</p>
+                    <p>vConsole 控制台 → 命令输入框</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="step">
+            <h3><span class="step-number">4</span>完成导入</h3>
+            <p>执行命令后，点击 <strong>Hide</strong> 隐藏控制台面板，此时你应该已经进入了课程表导入页面，可以正常进行导入操作了。</p>
+        </div>
+        
+        <h2>注意事项</h2>
+        <div class="warning">
+            <ul>
+                <li>确保小爱同学 App 已更新到最新版本</li>
+                <li>该方法利用的是前端限制的漏洞，可能会在后续版本中被修复</li>
+                <li>导入过程中请保持网络连接稳定</li>
+                <li>如果出现问题，可以尝试清除应用缓存后重试</li>
+            </ul>
+        </div>
+        
+        <h2>图片说明</h2>
+        <p>由于原始图片链接已失效，上面使用的是占位符。实际操作时的界面应该是：</p>
+        <ul>
+            <li><strong>第一张图</strong>：小爱同学课程表设置页面，需要在底部空白处连续点击</li>
+            <li><strong>第二张图</strong>：Debug 设置页面，显示 vConsole 选项</li>
+            <li><strong>第三张图</strong>：vConsole 控制台界面，显示命令输入框</li>
+        </ul>
+        
+        <div class="footer">
+            <p>最后更新：2025年1月</p>
+            <p>本教程仅供学习交流使用</p>
+        </div>
+    </div>
+</body>
+</html>
